@@ -54,8 +54,8 @@ for seed in [8, 13, 42, 50, 60]:
         task_name=task_name
     ):
 
-        c0 = res[:, tokenizer.encode("bad", add_special_tokens=False)[0]]
-        c1 = res[:, tokenizer.encode("great", add_special_tokens=False)[0]]
+        c0 = res[:, tokenizer.encode("No", add_special_tokens=False)[0]]
+        c1 = res[:, tokenizer.encode("Yes", add_special_tokens=False)[0]]
 
         pred = torch.stack([c0, c1]).argmax(dim=0)
         predictions = torch.cat([predictions, pred])
