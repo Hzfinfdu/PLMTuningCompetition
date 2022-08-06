@@ -22,7 +22,7 @@ tokenizer = RobertaTokenizer.from_pretrained('roberta-large')
 model = RobertaModel.from_pretrained('roberta-large').to(device).eval()
 
 pre_str = tokenizer.decode(list(range(1000, 1050))) + ' . '
-middle_str = ' . It was <mask> '
+middle_str = ' ? <mask> .'
 
 
 for seed in [8, 13, 42, 50, 60]:

@@ -14,7 +14,7 @@ def load_hf_dataset(task_name: str = 'SST-2', seed: int = 42, split: str = 'trai
     :param split: 'train', 'dev'
     """
     dataset = datasets.load_dataset(
-        path=f'./dataset/{task_name}/{task_name}.py',
+        path=f'./datasets/{task_name}/{task_name}.py',
         split=f'{split}_{seed}'
     )
     return dataset
