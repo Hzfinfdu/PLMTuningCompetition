@@ -1,0 +1,48 @@
+a dog chases another dog.	the dogs are outside	Neutral
+the dog barks at the toy.	The dogs are fighting over the toy.	Neutral
+A family is relaxing on their bright yellow boat.	A family is relaxing on their bright yellow plastic boat.	Neutral
+Three football players and two are fighting for the ball.	the child is black	Neutral
+This little girl, her blond-hair held back by a red band, sticks her tongue out playfully at the camera.	The little girl is posing for a picture for her granny	Neutral
+Two boys are playing flag football.	Two high school boys play flag football.	Neutral
+A man with glasses is playing his instrument in a small crown of people that includes another man in a suit with a trumpet.	The crowd is listening to the musicians.	Neutral
+A young boy is playing on a piece of playground equipment that features tires which he must step in and out of, while keeping his balance.	A young boy is playing at the park.	Neutral
+A woman is kneeling down on the sidewalk pointing at the ground as she holds the attention of six people, one of which is in a wheelchair.	A woman pushes a person in a wheelchair in a hospital.	Contradiction
+A man holding a video camera is recording an orchestral performance.	a man records performance	Entailment
+One man is holding a beer and the other is taking a bite of food.	Two men are having lunch.	Neutral
+A man is holding a baby in a sling.	The child is wearing a cowboy hat.	Neutral
+A football player runs down the field as he tries to avoid getting tackled.	The player is holding a boxing glove.	Contradiction
+A woman with blond-hair is sitting in a booth with a drink working on her laptop.	A women is catching up on work after her vacation.	Neutral
+A person is attempting to pick up a spare while bowling.	The bowler has just bowled a strike.	Contradiction
+A young boy is caught making a mess of his room.	A young boy is in his room.	Entailment
+A man smoking a cigarette in front of a horizontal garage.	Nobody is smoking	Contradiction
+A barefoot man in rainbow shorts and a green shirt completes a food purchase at an outdoor concession stand.	The man makes a food purchase.	Entailment
+A group of musicians play outside in front of a large crowd.	Four banjo players play outside in front of a large crowd.	Neutral
+Three men are working outside in the sun.	The men are splashing in the rain puddles.	Contradiction
+A musician and a lady with brown hair are about to sing.	The man and woman are getting ready to perform.	Entailment
+An Asian man in a tan shirt and glasses holds his camera up to take a picture in an art gallery.	A man takes a picture in the art gallery.	Entailment
+A group of people are working on an unfinished wooden shed.	They are all alone	Contradiction
+An african american gets a haircut.	They are donating their hair to the make a wig for cancer society foundation	Neutral
+A boy sand surfing down a hill	The boy sand surfed down the hill.	Entailment
+A group of Caucasian people are singing and holding music books to help guide them.	Threre are a lot of people swimming.	Contradiction
+Two women are sitting and talking.	Two women are moving a dresser.	Contradiction
+Two dogs are playing tug-of-war with a blue object in front of a building.	Two dogs are playing outside.	Entailment
+A kid with Green shoes, red shorts, and a blue hat and shirt stands on a stretch of pavement.	A little boy is standing in a street looking for his friend.	Neutral
+Two men are toasting a cup of beer together, while another watches.	Two men are holding beers.	Entailment
+Two people are talking near a red phone booth while construction workers rest nearby.	The people are ignoring eachother.	Contradiction
+A man in a black tank top is putting clothes out on the line to dry.	The man is hanging laundry.	Entailment
+a woman walks to the cows.	A woman is inside the grocery store buying meat.	Contradiction
+A lone person standing on a cliff watching the gulls.	A person stands on a cliff.	Entailment
+A man is providing vocals in a sound booth.	The man in a world-famous artist recording his newest album.	Neutral
+A man is holding an advertisement for Quiznos Subs.	The man holding the advertisement for Quiznos Subs always has a smile on his face.	Neutral
+Two middle-aged men in a room with music equipment speak with each other.	The men are having a conversation.	Entailment
+A woman in a black shirt using hand gestures while she talks and a woman sitting in the chair beside her with her hand on her head listening to the woman talking.	The women are igonoring each other.	Contradiction
+The little boy with the yellow stripe on his hat is in the snow.	The little boy has a yellow hat	Entailment
+A man in white snow gear is shoveling snow.	A man is raking leaves.	Contradiction
+A group of men are riding their bicycles in a race.	Some men riding motorcycles.	Contradiction
+A woman wearing a striped shirt stands in front of a Mercedes.	A woman wearing a shirt stands in front of a Mercedes.	Entailment
+A young girl wearing yellow flip-flops is sitting on a large boulder.	a girl is sitting	Entailment
+Group of teen males picking up garbage.	A group of teen male workers taking garbage outside.	Entailment
+An older gentleman is holding a conference.	boy eats cheetos	Contradiction
+A shirtless man is climbing up a mountainside.	The man is wearing a shirt.	Contradiction
+Two boys wakeboard.	Two boys are wakeboarding.	Entailment
+Welders working at night with sparks flying.	Workers are working during the day.	Contradiction
