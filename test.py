@@ -50,7 +50,7 @@ for seed in [8, 13, 42, 50, 60]:
     for res, _ in test_api(
         sentence_fn=sentence_fn,
         embedding_and_attention_mask_fn=embedding_and_attention_mask_fn,
-        test_data_path=f'/remote-home/zfhe/projects/Black-Box-Tuning/test_datasets/{task_name}/encrypted.pth',
+        test_data_path=f'./test_datasets/{task_name}/encrypted.pth',
         task_name=task_name
     ):
 
@@ -60,9 +60,9 @@ for seed in [8, 13, 42, 50, 60]:
         pred = torch.stack([c0, c1]).argmax(dim=0)
         predictions = torch.cat([predictions, pred])
 
-    if not os.path.exists(f'/remote-home/zfhe/projects/Black-Box-Tuning/predictions/{task_name}'):
-        os.makedirs(f'/remote-home/zfhe/projects/Black-Box-Tuning/predictions/{task_name}')
-    with open(f'/remote-home/zfhe/projects/Black-Box-Tuning/predictions/{task_name}/{seed}.csv', 'a+') as f:
+    if not os.path.exists(f'./predictions/{task_name}'):
+        os.makedirs(f'./predictions/{task_name}')
+    with open(f'./predictions/{task_name}/{seed}.csv', 'a+') as f:
         wt = csv.writer(f)
         wt.writerow(['', 'pred'])
         wt.writerows(torch.stack([torch.arange(predictions.size(0)), predictions.detach().cpu()]).long().T.numpy().tolist())
