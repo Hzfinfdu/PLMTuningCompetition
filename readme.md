@@ -12,6 +12,7 @@ pip install datasets
 pip install fastNLP
 pip install cma
 pip install sklearn
+pip install cryptography
 ```
 
 ## Using BBT
