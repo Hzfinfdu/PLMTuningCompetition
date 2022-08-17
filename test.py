@@ -51,7 +51,8 @@ for seed in [8, 13, 42, 50, 60]:
         sentence_fn=sentence_fn,
         embedding_and_attention_mask_fn=embedding_and_attention_mask_fn,
         test_data_path=f'./test_datasets/{task_name}/encrypted.pth',
-        task_name=task_name
+        task_name=task_name,
+        device=device
     ):
 
         c0 = res[:, tokenizer.encode("No", add_special_tokens=False)[0]]
@@ -66,7 +67,6 @@ for seed in [8, 13, 42, 50, 60]:
         wt = csv.writer(f)
         wt.writerow(['', 'pred'])
         wt.writerows(torch.stack([torch.arange(predictions.size(0)), predictions.detach().cpu()]).long().T.numpy().tolist())
-
 
 
 

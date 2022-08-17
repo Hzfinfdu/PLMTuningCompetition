@@ -49,7 +49,8 @@ for seed in [8, 13, 42, 50, 60]:
         sentence_fn=sentence_fn,
         hidden_states_and_attention_mask_fn=hidden_states_and_attention_mask_fn,
         test_data_path=f'./test_datasets/{task_name}/encrypted.pth',
-        task_name=task_name
+        task_name=task_name,
+        device=device
     ):
         c0 = res[:, tokenizer.encode("No", add_special_tokens=False)[0]]
         c1 = res[:, tokenizer.encode("Yes", add_special_tokens=False)[0]]
