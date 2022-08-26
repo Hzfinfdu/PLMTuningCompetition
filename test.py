@@ -19,7 +19,6 @@ import csv
 task_name = 'MRPC'
 device = 'cuda:0'
 tokenizer = RobertaTokenizer.from_pretrained('roberta-large')
-model = RobertaModel.from_pretrained('roberta-large').to(device).eval()
 
 pre_str = tokenizer.decode(list(range(1000, 1050))) + ' . '
 middle_str = ' ? <mask> .'
