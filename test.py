@@ -46,7 +46,7 @@ for seed in [8, 13, 42, 50, 60]:
         return embedding + torch.cat([prepad, best, pospad]), attention_mask
 
     predictions = torch.tensor([], device=device)
-    for res, _ in test_api(
+    for res, _, _ in test_api(
         sentence_fn=sentence_fn,
         embedding_and_attention_mask_fn=embedding_and_attention_mask_fn,
         test_data_path=f'./test_datasets/{task_name}/encrypted.pth',
@@ -62,11 +62,10 @@ for seed in [8, 13, 42, 50, 60]:
 
     if not os.path.exists(f'./predictions/{task_name}'):
         os.makedirs(f'./predictions/{task_name}')
-    with open(f'./predictions/{task_name}/{seed}.csv', 'a+') as f:
+    with open(f'./predictions/{task_name}/{seed}.csv', 'w+') as f:
         wt = csv.writer(f)
         wt.writerow(['', 'pred'])
         wt.writerows(torch.stack([torch.arange(predictions.size(0)), predictions.detach().cpu()]).long().T.numpy().tolist())
-
 
 
 
