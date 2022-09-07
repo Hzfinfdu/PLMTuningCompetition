@@ -341,7 +341,7 @@ class TRECLoader(Loader):
             example['input_text'] = '%s . %s question: %s ' % (prompt, self.tokenizer.mask_token, example['text'])
             example['target_text'] = self.label2text[example['labels']]
         else:
-            example['input_text'] = '%s . Topic: %s' % (self.tokenizer.mask_token, example['text'])
+            example['input_text'] = '%s . question: %s' % (self.tokenizer.mask_token, example['text'])
             example['target_text'] = self.label2text[example['labels']]
         return example
 
