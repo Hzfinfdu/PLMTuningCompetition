@@ -121,40 +121,6 @@ if cat_or_add == 'add':
 else:
     init_prompt_path = './nli_base_prompt.pt'
 
-if task_name in ['sst2', 'yelpp', 'mrpc']:
-    num_labels = 2
-elif task_name in ['snli']:
-    num_labels = 3
-elif task_name in ['agnews']:
-    num_labels = 4
-elif task_name in ['trec']:
-    num_labels = 5
-else:
-    raise ValueError
-
-# save_path = '{}_results/{}_results/D_{}_d_{}_data_{}_{}_range_{}_loss_{}_budget_{}_seed_{}_{}_{}_{}_{}'.format(
-#     model_name.replace('/', '-'),
-#     task_name,
-#     n_prompt_tokens * 1024,
-#     intrinsic_dim,
-#     k_shot * num_labels,
-#     alg,
-#     bound,
-#     loss_type,
-#     budget,
-#     seed,
-#     cat_or_add,
-#     random_proj,
-#     'parallel' if parallel else 'serial',
-#     inference_framework
-# )
-# print('Results will be saved in {}'.format(save_path))
-#
-# if os.path.exists(save_path):
-#     print('Experiment already run.')
-#     exit()
-#
-# args.save_path = save_path
 args.bbt_version = 'bbt'
 
 # log_dir = './v2_logs'
