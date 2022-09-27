@@ -42,8 +42,6 @@ parser.add_argument("--model_name", default='roberta-large',
                              'fnlp/cpt-large'], type=str)
 parser.add_argument("--task_name", default='sst2', type=str)
 parser.add_argument("--intrinsic_dim", default=500, type=int)
-parser.add_argument("--k_shot", default=16, type=int)
-parser.add_argument("--batch_size", default=32, type=int)
 parser.add_argument("--budget", default=8000, type=int)
 parser.add_argument("--popsize", default=20, type=int)
 parser.add_argument("--bound", default=0, type=int)
@@ -78,8 +76,7 @@ model_name = 'roberta-large'
 task_name = args.task_name
 n_prompt_tokens = 50
 intrinsic_dim = args.intrinsic_dim
-k_shot = args.k_shot
-batch_size = args.batch_size
+batch_size = 32  # no use
 budget = args.budget
 bound = args.bound
 sigma = args.sigma
